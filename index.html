@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>WeatherX - Live Weather App</title>
+
+<meta
+name="description"
+content="WeatherX gives live weather updates, humidity, wind speed, pressure and current location weather.">
+
+<link rel="icon" href="clear.png">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🌤 WeatherX
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+<div class="container" id="home">
+
+    <div class="card">
+
+        <h1>🌤 Weather App</h1>
+
+        <button id="dark-mode-btn">
+            🌙 Dark Mode
+        </button>
+
+        <div class="search">
+
+            <input
+            type="text"
+            id="city-input"
+            placeholder="Enter city name">
+
+            <button id="search-btn">
+                Search
+            </button>
+
+        </div>
+
+        <button id="location-btn">
+            📍 Current Location
+        </button>
+
+        <p id="loading"></p>
+
+        <div class="weather">
+
+            <img
+            src="clear.png"
+            id="weather-icon"
+            class="weather-icon">
+
+            <h2 id="temp">--°C</h2>
+
+            <p id="feels-like"></p>
+
+            <h3 id="city">City Name</h3>
+
+            <p id="date"></p>
+
+            <p id="time"></p>
+
+            <p id="weather-type">Weather</p>
+
+            <div class="details">
+
+                <div class="box">
+                    <p>Humidity</p>
+                    <h4 id="humidity">--%</h4>
+                </div>
+
+                <div class="box">
+                    <p>Wind</p>
+                    <h4 id="wind">-- km/h</h4>
+                </div>
+
+            </div>
+
+            <div class="details">
+
+                <div class="box">
+                    <p>Pressure</p>
+                    <h4 id="pressure">-- hPa</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p id="error"></p>
+
+    </div>
+
+</div>
+
+<section id="about">
+
+    <h2>About WeatherX</h2>
+
+    <p>
+        WeatherX is a modern responsive weather app
+        that shows live weather, humidity, wind speed,
+        pressure and current location weather updates.
+    </p>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <p>Email: weatherx@gmail.com</p>
+
+    <p>Phone: +91 9825772695</p>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 WeatherX | All Rights Reserved
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
